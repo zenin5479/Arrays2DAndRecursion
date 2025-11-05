@@ -75,8 +75,8 @@ namespace Arrays2DAndRecursion
          double b2 = Convert.ToDouble(Console.ReadLine());
 
          PointIntersection(k1, b1, k2, b2);
-
-         void PointIntersection(double k1, double b1, double k2, double b2)     // метод нахождения точки пересечения прямых
+         // Метод нахождения точки пересечения прямых
+         void PointIntersection(double k1, double b1, double k2, double b2)
          {
             if (k1 == k2)
                Console.WriteLine("Графики не пересекаются");
@@ -96,7 +96,8 @@ namespace Arrays2DAndRecursion
 
          Console.WriteLine("Введите десятичное число ");
          int number = Convert.ToInt32(Console.ReadLine());
-         string Dvcod(int number)                                       // метод перевода десятичного числа в двоичный
+         // Метод перевода десятичного числа в двоичный
+         string Dvcod(int number)
          {
             string s = "";
             while (number >= 1)
