@@ -94,7 +94,7 @@ namespace Arrays2DAndRecursion
 
          Console.WriteLine("------------------------------------");
          Console.WriteLine("Перевод десятичного числа в двоичное");
-         Console.WriteLine("----------------------------------------------------------------------------------------------------------------------- ");
+         Console.WriteLine("------------------------------------");
 
          Console.WriteLine("Введите десятичное число:");
          int number = Convert.ToInt32(Console.ReadLine());
