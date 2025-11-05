@@ -28,8 +28,8 @@ namespace Arrays2DAndRecursion
          FillArray(array);
          PrintArray(array);
          ZeroArray(array);
-
-         void FillArray(int[] array)                 //  метод заполнения массива случайными целыми числами
+         // Метод заполнения массива случайными целыми числами
+         void FillArray(int[] array)
          {
             Random rand = new Random();
             for (int i = 0; i < array.Length; i++)
