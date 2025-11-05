@@ -96,7 +96,7 @@ namespace Arrays2DAndRecursion
          // ДОПНИКИ
          Console.WriteLine("");
          Console.WriteLine(" Задача 1------------------------------------------------------------------------------------------------------- ");
-         Console.WriteLine(" Написать перевод десятичного числа в двоичное, используя рекурсию. ");
+         Console.WriteLine("Перевод десятичного числа в двоичное");
          Console.WriteLine(" ----------------------------------------------------------------------------------------------------------------------- ");
 
          Console.WriteLine("Введите десятичное число ");
@@ -111,6 +111,7 @@ namespace Arrays2DAndRecursion
                DvFigura1 = Convert.ToString(number % 2);
                return Dvcod(number / 2) + DvFigura1;
             }
+
             return "";
          }
 
