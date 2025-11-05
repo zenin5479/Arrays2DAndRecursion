@@ -97,7 +97,7 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("Перевод десятичного числа в двоичное");
          Console.WriteLine("----------------------------------------------------------------------------------------------------------------------- ");
 
-         Console.WriteLine("Введите десятичное число ");
+         Console.WriteLine("Введите десятичное число:");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод перевода десятичного числа в двоичный
          string Dvcod(int number)
