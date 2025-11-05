@@ -21,9 +21,8 @@ namespace Arrays2DAndRecursion
       {
          Console.WriteLine("------------------------------------------------------------------------------------------------");
          Console.WriteLine("Определение введенного количества положительных чисел");
-         
          Console.WriteLine("----------------------------------------------------------------------------------------------------------------------- ");
-         Console.WriteLine("введите кол чисел:");
+         Console.WriteLine("Введите количество чисел:");
          int m = Convert.ToInt32(Console.ReadLine());
          int[] array = new int[m];
          FillArray(array);
