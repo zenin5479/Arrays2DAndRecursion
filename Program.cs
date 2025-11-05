@@ -38,7 +38,8 @@ namespace Arrays2DAndRecursion
             }
          }
 
-         void PrintArray(int[] array)                       // метод распечатки массива
+         // Метод распечатки массива
+         void PrintArray(int[] array)
          {
             for (int i = 0; i < array.Length; i++)
             {
@@ -78,12 +79,12 @@ namespace Arrays2DAndRecursion
          void PointIntersection(double k1, double b1, double k2, double b2)     // метод нахождения точки пересечения прямых
          {
             if (k1 == k2)
-               Console.WriteLine("графики не пересекаются");
+               Console.WriteLine("Графики не пересекаются");
             else
             {
                double x = (b2 - b1) / (k1 - k2);
                double y = k1 * x + b1;
-               Console.WriteLine("точка пересечения: [" + x + "; " + y + "]");
+               Console.WriteLine("Точка пересечения: [" + x + "; " + y + "]");
             }
          }
 
@@ -108,7 +109,7 @@ namespace Arrays2DAndRecursion
          }
 
          Dvcod(number);
-         Console.WriteLine("десятичное число " + number + " = двоичному числу " + Dvcod(number));
+         Console.WriteLine("Десятичное число " + number + " = Двоичному числу " + Dvcod(number));
 
          Console.WriteLine("");
          Console.WriteLine(" Задача 2------------------------------------------------------------------------------------------------------- ");
