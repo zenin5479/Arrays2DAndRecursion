@@ -54,7 +54,10 @@ namespace Arrays2DAndRecursion
             int count = 0;
             for (int i = 0; i < m; i++)
             {
-               if (array[i] > 0) count++;
+               if (array[i] > 0)
+               {
+                  count++;
+               }
             }
 
             Console.WriteLine("Количество чисел > 0 = " + count);
@@ -79,7 +82,9 @@ namespace Arrays2DAndRecursion
          void PointIntersection(double k1, double b1, double k2, double b2)
          {
             if (k1 == k2)
+            {
                Console.WriteLine("Графики не пересекаются");
+            }
             else
             {
                double x = (b2 - b1) / (k1 - k2);
@@ -122,19 +127,24 @@ namespace Arrays2DAndRecursion
          int SearchSymbol(string str, int pos = 0)
          {
             char[] glasnie = new char[20] { 'а', 'о', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я', 'А', 'О', 'И', 'Е', 'Ё', 'Э', 'Ы', 'У', 'Ю', 'Я' };
-
             int count = 0;
             if (pos < str.Length)
             {
                for (int j = 0; j < glasnie.Length; j++)
                {
-                  if (glasnie[j] == str[pos]) { count++; }
+                  if (glasnie[j] == str[pos])
+                  {
+                     count++;
+                  }
                }
+
                pos++;
                return count + SearchSymbol(str, pos);
             }
-
-            else return 0;
+            else
+            {
+               return 0;
+            }
          }
 
          Console.WriteLine("Количество гласных букв в тексте: " + str + " = " + SearchSymbol(str));
