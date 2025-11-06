@@ -22,17 +22,17 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("-----------------------------------------------------");
          Console.WriteLine("Введите количество чисел:");
          int m = Convert.ToInt32(Console.ReadLine());
-         int[] array = new int[m];
-         FillArray(array);
-         PrintArray(array);
-         ZeroArray(array);
+         int[] table = new int[m];
+         FillArray(table);
+         PrintArray(table);
+         ZeroArray(table);
          // Метод заполнения массива случайными целыми числами
          void FillArray(int[] array)
          {
-            Random Chance = new Random();
+            Random chance = new Random();
             for (int i = 0; i < array.Length; i++)
             {
-               array[i] = Chance.Next(-1000, 999);
+               array[i] = chance.Next(-1000, 999);
             }
          }
 
