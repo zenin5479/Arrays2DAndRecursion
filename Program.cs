@@ -106,7 +106,7 @@ namespace Arrays2DAndRecursion
                //Console.WriteLine("Точка пересечения: [{0}; {1}]", x, y);
             }
 
-            // Сравниваем значения double используя метод Equals(Double)
+            //// Сравниваем значения double используя метод Equals(Double)
             //if (kOne.Equals(kTwo))
             //{
             //   Console.WriteLine("Графики не пересекаются");
@@ -115,7 +115,9 @@ namespace Arrays2DAndRecursion
             //{
             //   double x = (bTwo - bOne) / (kOne - kTwo);
             //   double y = kOne * x + bOne;
-            //   Console.WriteLine("Точка пересечения: [" + x + "; " + y + "]");
+            //   //Console.Write("Точка пересечения: [{0:f2}; {1:f2}]", x, y);
+            //   Console.WriteLine("Точка пересечения: [{0:f}; {1:f}]", x, y);
+            //   //Console.WriteLine("Точка пересечения: [{0}; {1}]", x, y);
             //}
          }
 
