@@ -90,16 +90,16 @@ namespace Arrays2DAndRecursion
          Console.Write("Введите k2: ");
          double k2 = Convert.ToDouble(Console.ReadLine());
          // Метод нахождения точки пересечения прямых
-         void PointIntersection(double k1, double b1, double k2, double b2)
+         void PointIntersection(double kOne, double b1, double kTwo, double b2)
          {
-            if (k1 == k2)
+            if (kOne == kTwo)
             {
                Console.WriteLine("Графики не пересекаются");
             }
             else
             {
-               double x = (b2 - b1) / (k1 - k2);
-               double y = k1 * x + b1;
+               double x = (b2 - b1) / (kOne - kTwo);
+               double y = kOne * x + b1;
                Console.WriteLine("Точка пересечения: [" + x + "; " + y + "]");
             }
          }
