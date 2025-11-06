@@ -156,13 +156,19 @@ namespace Arrays2DAndRecursion
             int count = 0;
             if (pos < str.Length)
             {
-               for (int j = 0; j < glasnie.Length; j++)
+int j = 0;
+               while (j < glasnie.Length)
                {
-                  if (glasnie[j] == str[pos])
+                   if (glasnie[j] == str[pos])
                   {
                      count++;
                   }
+                  
+                  
+                  j++;
                }
+               
+             
 
                pos++;
                return count + SearchSymbol(str, pos);
