@@ -99,10 +99,9 @@ namespace Arrays2DAndRecursion
          // Метод перевода десятичного числа в двоичный
          string Dvcod(int number)
          {
-            string s = "";
             while (number >= 1)
             {
-               string dvFigura1 = s;
+               string dvFigura1;
                dvFigura1 = Convert.ToString(number % 2);
                return Dvcod(number / 2) + dvFigura1;
             }
