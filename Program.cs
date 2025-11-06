@@ -32,7 +32,7 @@ namespace Arrays2DAndRecursion
             Random chance = new Random();
             for (int i = 0; i < matrix.Length; i++)
             {
-               matrix[i] = chance.Next(-1000, 999);
+               array[i] = Chance.Next(-1000, 999);
             }
          }
 
