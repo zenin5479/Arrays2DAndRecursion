@@ -81,16 +81,14 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("----------------------------------------");
          Console.WriteLine("Нахождение точки пересечения двух прямых");
          Console.WriteLine("----------------------------------------");
-         Console.Write("Введите k1: ");
-         double k1 = Convert.ToDouble(Console.ReadLine());
          Console.Write("Введите b1: ");
          double b1 = Convert.ToDouble(Console.ReadLine());
-         Console.Write("Введите k2: ");
-         double k2 = Convert.ToDouble(Console.ReadLine());
+         Console.Write("Введите k1: ");
+         double k1 = Convert.ToDouble(Console.ReadLine());
          Console.Write("Введите b2: ");
          double b2 = Convert.ToDouble(Console.ReadLine());
-
-         PointIntersection(k1, b1, k2, b2);
+         Console.Write("Введите k2: ");
+         double k2 = Convert.ToDouble(Console.ReadLine());
          // Метод нахождения точки пересечения прямых
          void PointIntersection(double k1, double b1, double k2, double b2)
          {
@@ -105,6 +103,9 @@ namespace Arrays2DAndRecursion
                Console.WriteLine("Точка пересечения: [" + x + "; " + y + "]");
             }
          }
+
+         PointIntersection(k1, b1, k2, b2);
+         
 
          Console.WriteLine("------------------------------------");
          Console.WriteLine("Перевод десятичного числа в двоичное");
