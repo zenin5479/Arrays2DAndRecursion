@@ -137,10 +137,8 @@ namespace Arrays2DAndRecursion
                pos++;
                return count + SearchSymbol(str, pos);
             }
-            else
-            {
-               return 0;
-            }
+
+            return 0;
          }
 
          Console.WriteLine("Количество гласных букв в тексте: " + str + " = " + SearchSymbol(str));
