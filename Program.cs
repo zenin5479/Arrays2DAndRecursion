@@ -53,7 +53,7 @@ namespace Arrays2DAndRecursion
          {
             int count = 0;
             int i = 0;
-            while (i < m)
+            while (i < range.Length)
             {
                if (range[i] > 0)
                {
@@ -61,8 +61,6 @@ namespace Arrays2DAndRecursion
                }
                i++;
             }
-
-
 
             Console.WriteLine("Количество чисел > 0 = " + count);
          }
