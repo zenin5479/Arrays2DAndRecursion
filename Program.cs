@@ -47,7 +47,7 @@ namespace Arrays2DAndRecursion
             Console.WriteLine();
          }
 
-         // 
+         // Метод поиска чисел больше нуля
          void ZeroArray(int[] range)
          {
             int count = 0;
