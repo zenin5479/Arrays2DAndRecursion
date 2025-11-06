@@ -47,12 +47,12 @@ namespace Arrays2DAndRecursion
             Console.WriteLine();
          }
 
-         void ZeroArray(int[] array)
+         void ZeroArray(int[] range)
          {
             int count = 0;
             for (int i = 0; i < m; i++)
             {
-               if (array[i] > 0)
+               if (range[i] > 0)
                {
                   count++;
                }
