@@ -61,14 +61,14 @@ namespace Arrays2DAndRecursion
          void ZeroArray(int[] range)
          {
             int count = 0;
-            int i = 0;
-            while (i < range.Length)
+            int k = 0;
+            while (k < range.Length)
             {
-               if (range[i] > 0)
+               if (range[k] > 0)
                {
                   count++;
                }
-               i++;
+               k++;
             }
 
             Console.WriteLine("Количество чисел > 0 = " + count);
