@@ -34,6 +34,7 @@ namespace Arrays2DAndRecursion
                i++;
             }
          }
+
          // Метод распечатки массива
          void PrintArray(int[] grid)
          {
@@ -41,8 +42,6 @@ namespace Arrays2DAndRecursion
             while (i < grid.Length)
             {
                Console.Write(grid[i] + " | ");
-
-
                i++;
             }
 
@@ -53,13 +52,17 @@ namespace Arrays2DAndRecursion
          void ZeroArray(int[] range)
          {
             int count = 0;
-            for (int i = 0; i < m; i++)
+            int i = 0;
+            while (i < m)
             {
                if (range[i] > 0)
                {
                   count++;
                }
+               i++;
             }
+
+
 
             Console.WriteLine("Количество чисел > 0 = " + count);
          }
