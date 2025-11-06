@@ -27,12 +27,12 @@ namespace Arrays2DAndRecursion
          PrintArray(table);
          ZeroArray(table);
          // Метод заполнения массива случайными целыми числами
-         void FillArray(int[] array)
+         void FillArray(int[] Matrix)
          {
             Random chance = new Random();
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < Matrix.Length; i++)
             {
-               array[i] = chance.Next(-1000, 999);
+               Matrix[i] = chance.Next(-1000, 999);
             }
          }
 
