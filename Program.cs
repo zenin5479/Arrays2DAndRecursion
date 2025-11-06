@@ -23,9 +23,6 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("Введите количество чисел:");
          int m = Convert.ToInt32(Console.ReadLine());
          int[] table = new int[m];
-         FillArray(table);
-         PrintArray(table);
-         ZeroArray(table);
          // Метод заполнения массива случайными целыми числами
          void FillArray(int[] matrix)
          {
@@ -35,7 +32,6 @@ namespace Arrays2DAndRecursion
                matrix[i] = chance.Next(-1000, 999);
             }
          }
-
          // Метод распечатки массива
          void PrintArray(int[] grid)
          {
@@ -61,6 +57,10 @@ namespace Arrays2DAndRecursion
 
             Console.WriteLine("Количество чисел > 0 = " + count);
          }
+
+         FillArray(table);
+         PrintArray(table);
+         ZeroArray(table);
 
          Console.WriteLine("----------------------------------------");
          Console.WriteLine("Нахождение точки пересечения двух прямых");
