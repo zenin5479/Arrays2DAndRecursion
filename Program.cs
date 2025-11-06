@@ -27,9 +27,11 @@ namespace Arrays2DAndRecursion
          void FillArray(int[] matrix)
          {
             Random chance = new Random();
-            for (int i = 0; i < matrix.Length; i++)
+            int i = 0;
+            while (i < matrix.Length)
             {
                matrix[i] = chance.Next(-1000, 999);
+               i++;
             }
          }
          // Метод распечатки массива
@@ -38,9 +40,9 @@ namespace Arrays2DAndRecursion
             int i = 0;
             while (i < grid.Length)
             {
-                Console.Write(grid[i] + " | ");
-               
-               
+               Console.Write(grid[i] + " | ");
+
+
                i++;
             }
 
