@@ -29,10 +29,10 @@ namespace Arrays2DAndRecursion
          // Метод заполнения массива случайными целыми числами
          void FillArray(int[] array)
          {
-            Random rand = new Random();
+            Random Chance = new Random();
             for (int i = 0; i < array.Length; i++)
             {
-               array[i] = rand.Next(-1000, 999);
+               array[i] = Chance.Next(-1000, 999);
             }
          }
 
