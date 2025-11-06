@@ -57,8 +57,6 @@ namespace Arrays2DAndRecursion
             Console.WriteLine("]");
          }
 
-
-
          // Метод распечатки массива
          void OutputtingArray(int[] cluster)
          {
