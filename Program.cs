@@ -35,9 +35,13 @@ namespace Arrays2DAndRecursion
          // Метод распечатки массива
          void PrintArray(int[] grid)
          {
-            for (int i = 0; i < grid.Length; i++)
+            int i = 0;
+            while (i < grid.Length)
             {
-               Console.Write(grid[i] + " | ");
+                Console.Write(grid[i] + " | ");
+               
+               
+               i++;
             }
 
             Console.WriteLine();
