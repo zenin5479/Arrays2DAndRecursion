@@ -118,7 +118,7 @@ namespace Arrays2DAndRecursion
 
          int SearchSymbol(string str, int pos = 0)
          {
-            char[] glasnie = new char[20] { 'а', 'о', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я', 'А', 'О', 'И', 'Е', 'Ё', 'Э', 'Ы', 'У', 'Ю', 'Я' };
+            char[] glasnie = new char[] { 'а', 'о', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я', 'А', 'О', 'И', 'Е', 'Ё', 'Э', 'Ы', 'У', 'Ю', 'Я' };
             int count = 0;
             if (pos < str.Length)
             {
