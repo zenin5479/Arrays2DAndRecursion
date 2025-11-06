@@ -101,7 +101,11 @@ namespace Arrays2DAndRecursion
             {
                double x = (bTwo - bOne) / (kOne - kTwo);
                double y = kOne * x + bOne;
-               Console.WriteLine("Точка пересечения: [" + x + "; " + y + "]");
+               //Console.WriteLine("Точка пересечения: [" + x + "; " + y + "]");
+
+               //Console.Write("Точка пересечения: [{0:f2};{1:f2}]", x, y);
+               //Console.Write("Точка пересечения: [{0:f};{1:f}]", x, y);
+               Console.Write("Точка пересечения: [{0};{1}]", x, y);
             }
 
             // Сравниваем значения double используя метод Equals(Double)
