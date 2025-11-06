@@ -94,7 +94,6 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("------------------------------------");
          Console.WriteLine("Перевод десятичного числа в двоичное");
          Console.WriteLine("------------------------------------");
-
          Console.WriteLine("Введите десятичное число:");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод перевода десятичного числа в двоичный
@@ -103,9 +102,9 @@ namespace Arrays2DAndRecursion
             string s = "";
             while (number >= 1)
             {
-               string DvFigura1 = s;
-               DvFigura1 = Convert.ToString(number % 2);
-               return Dvcod(number / 2) + DvFigura1;
+               string dvFigura1 = s;
+               dvFigura1 = Convert.ToString(number % 2);
+               return Dvcod(number / 2) + dvFigura1;
             }
 
             return "";
