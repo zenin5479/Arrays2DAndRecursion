@@ -30,7 +30,7 @@ namespace Arrays2DAndRecursion
             int i = 0;
             while (i < matrix.Length)
             {
-               matrix[i] = chance.Next(-1000, 999);
+               matrix[i] = chance.Next(-999, 1000);
                i++;
             }
          }
