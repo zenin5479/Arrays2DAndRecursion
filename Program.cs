@@ -92,7 +92,8 @@ namespace Arrays2DAndRecursion
          // Метод нахождения точки пересечения прямых
          void PointIntersection(double kOne, double bOne, double kTwo, double bTwo)
          {
-            if (kOne == kTwo)
+            // Сравниваем значения double используя метод CompareTo(Double) 
+            if (kOne.CompareTo(kTwo) == 0)
             {
                Console.WriteLine("Графики не пересекаются");
             }
@@ -102,6 +103,16 @@ namespace Arrays2DAndRecursion
                double y = kOne * x + bOne;
                Console.WriteLine("Точка пересечения: [" + x + "; " + y + "]");
             }
+
+            // Сравниваем значения double используя метод Equals(Double)
+            //if (inputArray[i].Equals(max))
+            //{
+            //   outputArray[i] = inputArray[i];
+            //}
+            //else
+            //{
+            //   outputArray[i] = i;
+            //}
          }
 
          PointIntersection(k1, b1, k2, b2);
