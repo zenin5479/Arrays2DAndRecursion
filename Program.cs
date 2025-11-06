@@ -105,7 +105,6 @@ namespace Arrays2DAndRecursion
          }
 
          PointIntersection(k1, b1, k2, b2);
-         
 
          Console.WriteLine("------------------------------------");
          Console.WriteLine("Перевод десятичного числа в двоичное");
