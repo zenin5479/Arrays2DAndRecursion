@@ -90,7 +90,7 @@ namespace Arrays2DAndRecursion
          Console.Write("Введите k2: ");
          double k2 = Convert.ToDouble(Console.ReadLine());
          // Метод нахождения точки пересечения прямых
-         void PointIntersection(double kOne, double b1, double kTwo, double b2)
+         void PointIntersection(double kOne, double bOne, double kTwo, double bTwo)
          {
             if (kOne == kTwo)
             {
@@ -98,8 +98,8 @@ namespace Arrays2DAndRecursion
             }
             else
             {
-               double x = (b2 - b1) / (kOne - kTwo);
-               double y = kOne * x + b1;
+               double x = (bTwo - bOne) / (kOne - kTwo);
+               double y = kOne * x + bOne;
                Console.WriteLine("Точка пересечения: [" + x + "; " + y + "]");
             }
          }
