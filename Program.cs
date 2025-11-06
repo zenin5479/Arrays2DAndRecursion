@@ -38,14 +38,47 @@ namespace Arrays2DAndRecursion
          // Метод распечатки массива
          void PrintArray(int[] grid)
          {
-            int i = 0;
-            while (i < grid.Length)
+            int s = 0;
+            Console.Write("[");
+            while (s < grid.Length)
             {
-               Console.Write(grid[i] + " | ");
-               i++;
+               if (s == grid.Length - 1)
+               {
+                  Console.Write(grid[s] + "");
+               }
+               else
+               {
+                  Console.Write(grid[s] + ", ");
+               }
+
+               s++;
             }
 
-            Console.WriteLine();
+            Console.WriteLine("]");
+         }
+
+
+
+         // Метод распечатки массива
+         void OutputtingArray(int[] cluster)
+         {
+            int s = 0;
+            Console.Write("[");
+            while (s < cluster.Length)
+            {
+               if (s == cluster.Length - 1)
+               {
+                  Console.Write(cluster[s] + "");
+               }
+               else
+               {
+                  Console.Write(cluster[s] + ", ");
+               }
+
+               s++;
+            }
+
+            Console.WriteLine("]");
          }
 
          // Метод поиска чисел больше нуля
