@@ -185,6 +185,7 @@ namespace Arrays2DAndRecursion
          int s = Convert.ToInt32(Console.ReadLine());
          bool IsPowerOfThree(int digit)
          {
+            // Базовые случаи
             if (digit < 1)
             {
                return false;
@@ -195,6 +196,7 @@ namespace Arrays2DAndRecursion
                return true;
             }
 
+            // Проверяем делимость на 3 и рекурсивно вызываем для n/3
             if (digit % 3 != 0)
             {
                return false;
@@ -218,12 +220,21 @@ namespace Arrays2DAndRecursion
       {
          // Базовые случаи
          if (n < 1)
+         {
             return false;
+         }
+
          if (n == 1)
+         {
             return true;
+         }
+
          // Проверяем делимость на 3 и рекурсивно вызываем для n/3
          if (n % 3 == 0)
+         {
             return IsPowerThree(n / 3);
+         }
+
          return false;
       }
    }
