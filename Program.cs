@@ -215,10 +215,5 @@ namespace Arrays2DAndRecursion
             Console.WriteLine("Число: {0} не является степенью числа 3", s);
          }
       }
-
-      public static bool IsPowerThree(int n)
-      {
-         
-      }
    }
 }
