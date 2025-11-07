@@ -183,24 +183,24 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Введите чисело N:");
          int s = Convert.ToInt32(Console.ReadLine());
-         bool IsPowerOfThree(int Digit)
+         bool IsPowerOfThree(int digit)
          {
-            if (Digit < 1)
+            if (digit < 1)
             {
                return false;
             }
 
-            if (Digit == 1)
+            if (digit == 1)
             {
                return true;
             }
 
-            if (Digit % 3 != 0)
+            if (digit % 3 != 0)
             {
                return false;
             }
 
-            return IsPowerOfThree(Digit / 3);
+            return IsPowerOfThree(digit / 3);
          }
 
          bool validate = IsPowerOfThree(s);
