@@ -205,6 +205,15 @@ namespace Arrays2DAndRecursion
          }
 
          bool validate = IsPowerOfThree(s);
+         if (validate)
+         {
+
+            Console.WriteLine("Число {0} является степенью числа 3: ", s);
+         }
+         else
+         {
+            Console.WriteLine(validate);
+         }
       }
    }
 }
