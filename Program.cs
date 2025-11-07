@@ -179,13 +179,25 @@ namespace Arrays2DAndRecursion
          bool IsPowerOfThree(int n)
          {
             if (n < 1)
+            {
                return false;
+            }
+
             if (n == 1)
+            {
                return true;
+            }
+
             if (n % 3 != 0)
+            {
                return false;
+            }
+
             return IsPowerOfThree(n / 3);
          }
+
+         int r = 0;
+         bool jjk= IsPowerOfThree(r);
       }
 
      
