@@ -213,5 +213,18 @@ namespace Arrays2DAndRecursion
             Console.WriteLine("Число: {0} не является степенью числа 3", s);
          }
       }
+
+      public static bool IsPowerThree(int n)
+      {
+         // Базовые случаи
+         if (n < 1)
+            return false;
+         if (n == 1)
+            return true;
+         // Проверяем делимость на 3 и рекурсивно вызываем для n/3
+         if (n % 3 == 0)
+            return IsPowerThree(n / 3);
+         return false;
+      }
    }
 }
