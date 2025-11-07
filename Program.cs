@@ -208,7 +208,7 @@ namespace Arrays2DAndRecursion
          if (validate)
          {
 
-            Console.WriteLine("Число {0} является степенью числа 3: ", s);
+            Console.WriteLine("Число: {0} является степенью числа 3", s);
          }
          else
          {
