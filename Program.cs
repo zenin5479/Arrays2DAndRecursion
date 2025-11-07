@@ -212,7 +212,7 @@ namespace Arrays2DAndRecursion
          }
          else
          {
-            Console.WriteLine(validate);
+            Console.WriteLine("Число: {0} не является степенью числа 3", s);
          }
       }
    }
