@@ -175,17 +175,19 @@ namespace Arrays2DAndRecursion
          }
 
          Console.WriteLine("Количество гласных букв в тексте: " + str + " = " + SearchSymbol(str));
+
+         bool IsPowerOfThree(int n)
+         {
+            if (n < 1)
+               return false;
+            if (n == 1)
+               return true;
+            if (n % 3 != 0)
+               return false;
+            return IsPowerOfThree(n / 3);
+         }
       }
 
-      public static bool IsPowerOfThree(int n)
-      {
-         if (n < 1)
-            return false;
-         if (n == 1)
-            return true;
-         if (n % 3 != 0)
-            return false;
-         return IsPowerOfThree(n / 3);
-      }
+     
    }
 }
