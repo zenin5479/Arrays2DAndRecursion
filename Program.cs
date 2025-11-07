@@ -218,17 +218,6 @@ namespace Arrays2DAndRecursion
 
       public static bool IsPowerThree(int n)
       {
-         // Базовые случаи
-         if (n < 1)
-         {
-            return false;
-         }
-
-         if (n == 1)
-         {
-            return true;
-         }
-
          // Проверяем делимость на 3 и рекурсивно вызываем для n/3
          if (n % 3 == 0)
          {
