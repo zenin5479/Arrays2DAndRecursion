@@ -176,6 +176,8 @@ namespace Arrays2DAndRecursion
 
          Console.WriteLine("Количество гласных букв в тексте: " + str + " = " + SearchSymbol(str));
 
+         
+         
          bool IsPowerOfThree(int n)
          {
             if (n < 1)
