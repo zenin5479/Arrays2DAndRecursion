@@ -204,7 +204,7 @@ namespace Arrays2DAndRecursion
             return IsPowerOfThree(n / 3);
          }
 
-         bool jjk = IsPowerOfThree(s);
+         bool validate = IsPowerOfThree(s);
       }
    }
 }
