@@ -176,9 +176,14 @@ namespace Arrays2DAndRecursion
 
          Console.WriteLine("Количество гласных букв в тексте: " + str + " = " + SearchSymbol(str));
 
+         // - Задача: Дано число N
+         // Используя только операцию деления и рекурсию, определите, что оно является степенью числа 3
+         Console.WriteLine("-----------------------------------------------------");
+         Console.WriteLine("Определение введенного количества положительных чисел");
+         Console.WriteLine("-----------------------------------------------------");
+         Console.WriteLine("Введите количество чисел:");
+         int m = Convert.ToInt32(Console.ReadLine());
 
-
-         
          bool IsPowerOfThree(int n)
          {
             if (n < 1)
