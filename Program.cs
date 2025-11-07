@@ -182,7 +182,7 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("Определение введенного количества положительных чисел");
          Console.WriteLine("-----------------------------------------------------");
          Console.WriteLine("Введите количество чисел:");
-         int m = Convert.ToInt32(Console.ReadLine());
+         int s = Convert.ToInt32(Console.ReadLine());
 
          bool IsPowerOfThree(int n)
          {
@@ -204,8 +204,8 @@ namespace Arrays2DAndRecursion
             return IsPowerOfThree(n / 3);
          }
 
-         int r = 0;
-         bool jjk= IsPowerOfThree(r);
+
+         bool jjk = IsPowerOfThree(s);
       }
    }
 }
