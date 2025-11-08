@@ -177,7 +177,7 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Определение является ли число N степенью числа 3");
          Console.WriteLine("------------------------------------------------");
-         Console.WriteLine("Введите чисело N:");
+         Console.Write("Введите чисело N:");
          int s = Convert.ToInt32(Console.ReadLine());
          bool IsPowerOfThree(int digit)
          {
