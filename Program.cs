@@ -148,7 +148,7 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("Расчет гласных букв");
          Console.WriteLine("-------------------");
          string str = "без труда не выловишь и рыбку из пруда";
-         int pos = 0;
+         int Calculator = 0;
 
          int SearchSymbol(string str, int pos = 0)
          {
