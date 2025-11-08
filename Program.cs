@@ -130,20 +130,23 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("Введите десятичное число:");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод перевода десятичного числа в двоичный
-         string Dvcod(int number)
+         //DecimalToBinary
+
+
+         string DecimalToBinary(int number)
          {
             while (number >= 1)
             {
                string dvFigura1;
                dvFigura1 = Convert.ToString(number % 2);
-               return Dvcod(number / 2) + dvFigura1;
+               return DecimalToBinary(number / 2) + dvFigura1;
             }
 
             return "";
          }
 
-         Dvcod(number);
-         Console.WriteLine("Десятичное число " + number + " = Двоичному числу " + Dvcod(number));
+         DecimalToBinary(number);
+         Console.WriteLine("Десятичное число " + number + " = Двоичному числу " + DecimalToBinary(number));
 
          Console.WriteLine("-------------------");
          Console.WriteLine("Расчет гласных букв");
