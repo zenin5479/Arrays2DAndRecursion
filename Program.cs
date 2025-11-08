@@ -20,7 +20,7 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("-----------------------------------------------------");
          Console.WriteLine("Определение введенного количества положительных чисел");
          Console.WriteLine("-----------------------------------------------------");
-         Console.WriteLine("Введите количество чисел:");
+         Console.Write("Введите количество чисел:");
          int m = Convert.ToInt32(Console.ReadLine());
          int[] table = new int[m];
          // Метод заполнения массива случайными целыми числами
