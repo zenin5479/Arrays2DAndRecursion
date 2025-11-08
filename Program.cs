@@ -147,9 +147,8 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("-------------------");
          Console.WriteLine("Расчет гласных букв");
          Console.WriteLine("-------------------");
-         string line = "без труда не выловишь и рыбку из пруда";
-         int calculator = 0;
-
+         string str = "без труда не выловишь и рыбку из пруда";
+         int pos = 0;
          int SearchSymbol(string str, int pos = 0)
          {
             char[] glasnie = { 'а', 'о', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я', 'А', 'О', 'И', 'Е', 'Ё', 'Э', 'Ы', 'У', 'Ю', 'Я' };
@@ -167,13 +166,14 @@ namespace Arrays2DAndRecursion
                   j++;
                }
 
-               return count + SearchSymbol(line, calculator);
+               pos++;
+               return count + SearchSymbol(str, pos);
             }
 
             return 0;
          }
 
-         Console.WriteLine("Количество гласных букв в тексте: " + line + " = " + SearchSymbol(line));
+         Console.WriteLine("Количество гласных букв в тексте: " + str + " = " + SearchSymbol(str));
 
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Определение является ли число N степенью числа 3");
