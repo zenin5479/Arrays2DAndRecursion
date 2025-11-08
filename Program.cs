@@ -147,18 +147,17 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("-------------------");
          Console.WriteLine("Расчет гласных букв");
          Console.WriteLine("-------------------");
-         string str = "без труда не выловишь и рыбку из пруда";
-         int pos = 0;
-         int SearchSymbol(string str, int pos = 0)
+         string line = "без труда не выловишь и рыбку из пруда";
+         int SearchSymbol(string row, int pos = 0)
          {
-            char[] glasnie = { 'а', 'о', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я', 'А', 'О', 'И', 'Е', 'Ё', 'Э', 'Ы', 'У', 'Ю', 'Я' };
+            char[] vowels = { 'а', 'о', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я', 'А', 'О', 'И', 'Е', 'Ё', 'Э', 'Ы', 'У', 'Ю', 'Я' };
             int count = 0;
-            if (pos < str.Length)
+            if (pos < row.Length)
             {
                int j = 0;
-               while (j < glasnie.Length)
+               while (j < vowels.Length)
                {
-                  if (glasnie[j] == str[pos])
+                  if (vowels[j] == row[pos])
                   {
                      count++;
                   }
@@ -167,13 +166,13 @@ namespace Arrays2DAndRecursion
                }
 
                pos++;
-               return count + SearchSymbol(str, pos);
+               return count + SearchSymbol(row, pos);
             }
 
             return 0;
          }
 
-         Console.WriteLine("Количество гласных букв в тексте: " + str + " = " + SearchSymbol(str));
+         Console.WriteLine("Количество гласных букв в тексте: " + line + " = " + SearchSymbol(line));
 
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Определение является ли число N степенью числа 3");
