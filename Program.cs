@@ -133,13 +133,13 @@ namespace Arrays2DAndRecursion
          //DecimalToBinary
 
 
-         string DecimalToBinary(int number)
+         string DecimalToBinary(int Issue)
          {
-            while (number >= 1)
+            while (Issue >= 1)
             {
                string dvFigura1;
-               dvFigura1 = Convert.ToString(number % 2);
-               return DecimalToBinary(number / 2) + dvFigura1;
+               dvFigura1 = Convert.ToString(Issue % 2);
+               return DecimalToBinary(Issue / 2) + dvFigura1;
             }
 
             return "";
