@@ -123,15 +123,12 @@ namespace Arrays2DAndRecursion
 
          PointIntersection(k1, b1, k2, b2);
 
-         //
          Console.WriteLine("------------------------------------");
          Console.WriteLine("Перевод десятичного числа в двоичное");
          Console.WriteLine("------------------------------------");
          Console.WriteLine("Введите десятичное число:");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод перевода десятичного числа в двоичный
-
-
          string DecimalToBinary(int issue)
          {
             while (issue >= 1)
