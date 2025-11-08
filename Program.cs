@@ -148,16 +148,16 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("Расчет гласных букв");
          Console.WriteLine("-------------------");
          string line = "без труда не выловишь и рыбку из пруда";
-         int SearchSymbol(string row, int pos = 0)
+         int SearchSymbol(string row, int calculator = 0)
          {
             char[] vowels = { 'а', 'о', 'и', 'е', 'ё', 'э', 'ы', 'у', 'ю', 'я', 'А', 'О', 'И', 'Е', 'Ё', 'Э', 'Ы', 'У', 'Ю', 'Я' };
             int count = 0;
-            if (pos < row.Length)
+            if (calculator < row.Length)
             {
                int j = 0;
                while (j < vowels.Length)
                {
-                  if (vowels[j] == row[pos])
+                  if (vowels[j] == row[calculator])
                   {
                      count++;
                   }
@@ -165,8 +165,8 @@ namespace Arrays2DAndRecursion
                   j++;
                }
 
-               pos++;
-               return count + SearchSymbol(row, pos);
+               calculator++;
+               return count + SearchSymbol(row, calculator);
             }
 
             return 0;
