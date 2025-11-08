@@ -20,7 +20,7 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("-----------------------------------------------------");
          Console.WriteLine("Определение введенного количества положительных чисел");
          Console.WriteLine("-----------------------------------------------------");
-         Console.Write("Введите количество чисел:");
+         Console.Write("Введите количество чисел: ");
          int m = Convert.ToInt32(Console.ReadLine());
          int[] table = new int[m];
          // Метод заполнения массива случайными целыми числами
@@ -126,7 +126,7 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("------------------------------------");
          Console.WriteLine("Перевод десятичного числа в двоичное");
          Console.WriteLine("------------------------------------");
-         Console.Write("Введите десятичное число:");
+         Console.Write("Введите десятичное число: ");
          int number = Convert.ToInt32(Console.ReadLine());
          // Метод перевода десятичного числа в двоичный
          string DecimalToBinary(int issue)
@@ -177,7 +177,7 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Определение является ли число N степенью числа 3");
          Console.WriteLine("------------------------------------------------");
-         Console.Write("Введите чисело N:");
+         Console.Write("Введите чисело N: ");
          int s = Convert.ToInt32(Console.ReadLine());
          bool IsPowerOfThree(int digit)
          {
