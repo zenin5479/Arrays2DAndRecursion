@@ -137,9 +137,9 @@ namespace Arrays2DAndRecursion
          {
             while (issue >= 1)
             {
-               string dvFigura1;
-               dvFigura1 = Convert.ToString(issue % 2);
-               return DecimalToBinary(issue / 2) + dvFigura1;
+               string value;
+               value = Convert.ToString(issue % 2);
+               return DecimalToBinary(issue / 2) + value;
             }
 
             return "";
