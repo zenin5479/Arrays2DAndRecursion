@@ -147,7 +147,7 @@ namespace Arrays2DAndRecursion
          Console.WriteLine("-------------------");
          Console.WriteLine("Расчет гласных букв");
          Console.WriteLine("-------------------");
-         string str = "без труда не выловишь и рыбку из пруда";
+         string line = "без труда не выловишь и рыбку из пруда";
          int calculator = 0;
 
          int SearchSymbol(string str, int pos = 0)
@@ -167,14 +167,13 @@ namespace Arrays2DAndRecursion
                   j++;
                }
 
-               pos++;
-               return count + SearchSymbol(str, pos);
+               return count + SearchSymbol(line, calculator);
             }
 
             return 0;
          }
 
-         Console.WriteLine("Количество гласных букв в тексте: " + str + " = " + SearchSymbol(str));
+         Console.WriteLine("Количество гласных букв в тексте: " + line + " = " + SearchSymbol(line));
 
          Console.WriteLine("------------------------------------------------");
          Console.WriteLine("Определение является ли число N степенью числа 3");
